@@ -208,3 +208,11 @@ img {
   max-height: 100%;
   border-radius: 50%;
 }
+
+
+.Loading{
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  margin: 0;
+}

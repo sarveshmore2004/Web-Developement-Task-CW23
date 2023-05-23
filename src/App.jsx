@@ -6,6 +6,7 @@ import List from './List'
 import Top from './Top' 
 import React from 'react'
 import { ReactDOM } from 'react'
+import ClipLoader from "react-spinners/HashLoader";
 
 function App() {
   const [loading , setLoading]=React.useState(true)
@@ -32,7 +33,17 @@ function App() {
 
   return (
     loading?
-    <div>hii</div>
+    (
+      <div className='Loading'>
+      <ClipLoader
+        color= {"#4D5B9E"}
+        loading={loading}
+        size={100}
+        aria-label="Loading Spinner"
+        data-testid="loader"
+      />
+      </div>
+    )
     :
     (<div className='mainbody'>
       <header className='header'>
